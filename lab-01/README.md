@@ -30,5 +30,12 @@ O *Personal Access Token* é uma chave de acesso utilizada como uma senha altern
 
 ### Salvar em cache as credenciais do PAT
 
+Durante o desenvolvimento, por vezes é necessário o uso do PAT diversas vezes, o que acaba por prejudicar a produtividade. Por esse motivo, ter a chave memorizada pelo computador temporariamente é algo quase indispensável, fazendo com que um único uso seja válido para toda a sessão de desenvolvimento.
+
+```
+# Comando para configuração de cache em 1h:
+git config --global credential.helper 'cache --timeout=3600'
+```
+
 ## Qual a diferença entre git merge e git rebase?
 
