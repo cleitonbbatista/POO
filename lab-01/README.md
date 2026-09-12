@@ -39,3 +39,16 @@ git config --global credential.helper 'cache --timeout=3600'
 
 ## Qual a diferença entre git merge e git rebase?
 
+- **git merge:**
+    - Não reescreve commits;
+    - Mantém linha do tempo original;
+    - Pode ramificar o histórico;
+    - Não altera o que já foi públicado.
+
+- **git rebase:**
+    - Move commits de uma branch e reaplica sobre outra;
+    - Reescreve o histórico;
+    - Altera identidade de commits;
+    - Linear.
+
+O *git merge* é recomendado quando o usuário deseja preservar o histórico e evitar riscos, enquanto o *git rebase* é recomendado quando se deseja um histórico mais linear.
