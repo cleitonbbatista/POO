@@ -79,10 +79,34 @@ public class Contato {
         }
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public String getSobrenome() {
+        return sobrenome;
+    }
+
+    public String getNomeCompleto() {
+        return nome + " " + sobrenome;
+    }
+
+    public LocalDate getDataNasc() {
+        return dataNasc;
+    }
+
+    public HashMap<String, Telefone> getTelefones() {
+        return telefones;
+    }
+
+    public HashMap<String, Email> getEmails() {
+        return emails;
+    }
+
     @Override
     public String toString() {
-        return "Contato [nome=" + nome + ", sobrenome=" + sobrenome + ", dataNasc=" + dataNasc + ", telefones="
-                + telefones + ", emails=" + emails + "]";
+        return "Contato [nome completo= " + getNomeCompleto() + ", data de nascimento= " + dataNasc + ", telefones ="
+                + telefones + ", emails= " + emails + "]";
     }
 
 }
